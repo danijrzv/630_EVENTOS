@@ -18,7 +18,7 @@ Debes contar con NodeJS instalado. Puedes instalarlo descargando el ejecutable e
 
 # Ejecución
 
-La aplicación se ejecuta, para desarrollo, abriendo las dos carpetas dentro de FullStack (backend y fronend) y ejecutar desde ambas ventanas de consola el comando "npm run dev", y se podrá interactuar con la aplicación abriendo desde el navegador la ruta http://localhost:5173, la cual te dirige al login de la página. Se debe resgistrar el usuario y posteriormente confirmar su cuenta a través del correo que se recibirá al correo registrado del emitente 630 EVENTOS configurado por NODEMAILER. 
+La aplicación se ejecuta, para producción, abriendo la carpeta backend en una ventana de comando y ejecutando el comando "npm run start" hecho esto podrás interactuar con la aplicación (gracias a la carpeta dist que cuenta con el frontend comprimido) abriendo desde el navegador la ruta http://localhost:4000, la cual te dirige al login de la página. Se debe resgistrar el usuario y posteriormente confirmar su cuenta a través del correo que se recibirá al correo registrado del emitente 630 EVENTOS configurado por NODEMAILER. 
 
 La base debe crearse en POSTGRESQL, puede agregarse otra base relacional con la que trabaja SEQUELIZE, pero debe agregarse su respectiva configuración. Trabajando con POSTGRESQL, se deben crear en una base de datos las siguientes dos trablas:
 
@@ -61,14 +61,10 @@ Se debe configurar un password para JWT, este puede ser cualqueira y también se
 
 - JWT_SECRET=AQUI_VA_CUALQUIER_PASSWORD
 
-Por último debe agregarse la URL del cliente que hará la petición (dirección del frontend) al mismo archivo .env, que en en mi equipo fue:
+Con estas variables de entorno en el archivo .env, puede ejecutarse el siguiente comando desde ambas carptetas, backend y frontend, desde una ventada de comandos:
 
-- FRONTEND_URL=http://localhost:5173
-
-Con está configuración del archivo .env, puede ejecutarse el siguiente comando desde ambas carptetas, backend y frontend, desde una ventada de comandos:
-
-- npm run dev
+- npm run start
 
 # Autor
 
-Jesús Daniel Juárez, user danijrzv en GitHub.
+Jesús Daniel Juárez; user danijrzv en GitHub.
