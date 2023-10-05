@@ -65,7 +65,7 @@ app.listen(PORT, ()=>{
     console.log(`Servidor funcionando en el puerto ${PORT}`)
 })
 
-// ENVIAR ARCHIVO DEL CLIENTE (COMENTAR APP.GE PARA DESARROLLO)
+// ENVIAR ARCHIVO DEL CLIENTE (COMENTAR PARA DESARROLLO)
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "./dist", "index.html"))
 })

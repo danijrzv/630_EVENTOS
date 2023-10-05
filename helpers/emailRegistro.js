@@ -16,12 +16,12 @@ const emailRegistro = async (datos)=>{
     const {email, nombre, token} = datos
     // CONSTRUYENDO EL CORREO
     const info = await transporter.sendMail({
-        from: "630 EVENTOS",
+        from: "3ventos",
         to: email,
-        subject: "Comprueba tu cuenta en 630 EVENTOS",
-        text: "Comprueba tu cuenta en 630 EVENTOS",
+        subject: "Comprueba tu cuenta en 3ventos",
+        text: "Comprueba tu cuenta en 3ventos",
         html: `
-            <p>Hola: ${nombre}, comprueba tu cuenta en 630 EVENTOS.</p>
+            <p>Hola: ${nombre}, comprueba tu cuenta en 3ventos.</p>
             <p>Tu cuenta ya está lista, solo debes comprobarla en el siguiente enlace:
             <a href="${process.env.FRONTEND_URL}/confirmar/${token}">Comprobar Cuenta</a></p>
 

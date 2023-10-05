@@ -16,7 +16,7 @@ const emailOlvidePassword = async (datos)=>{
     const {email, nombre, token} = datos
     // CONSTRUYENDO EL CORREO
     const info = await transporter.sendMail({
-        from: "630 EVENTOS",
+        from: "3ventos",
         to: email,
         subject: "Restablece tu Password",
         text: "Restablece tu Password",

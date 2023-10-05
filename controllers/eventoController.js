@@ -28,6 +28,13 @@ const obtenerEventos = async (req, res) => {
     res.json(eventos)
 }
 
+const eventosTotal = async (req, res) => {
+        // OBTENET TODOS LOS EVENTOS
+        const eventos = await Evento.findAll()
+        // ENVIAR LOS EVENTOS AL CLIENTE
+        res.json(eventos)
+}
+
 const actualizarEvento = async (req, res) => {
     // OBTENIENDO ID DE EVENTO DE LA URL
     const {id} = req.params
@@ -89,5 +96,6 @@ export {
     agregarEvento,
     obtenerEventos,
     actualizarEvento,
-    eliminarEvento
+    eliminarEvento,
+    eventosTotal
 }

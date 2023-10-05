@@ -5,7 +5,8 @@ import {
     agregarEvento,
     obtenerEventos,
     actualizarEvento,
-    eliminarEvento
+    eliminarEvento,
+    eventosTotal
 } from "../controllers/eventoController.js"
 import checkAuth from "../middleware/authMiddleware.js"
 
@@ -17,6 +18,7 @@ router.route("/")
     .post(checkAuth, agregarEvento)
     .get(checkAuth, obtenerEventos)
 
+router.get("/eventos-total", eventosTotal)
 // CREANDO RUTAS PARA ACTUALIZAR Y ELIMINAR EVENTOS
 router
     .route("/:id")

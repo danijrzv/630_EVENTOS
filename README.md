@@ -1,6 +1,6 @@
 # Introducción
 
-La app 630 EVENTOS te ayuda a administrar tus eventos, permitiendote agregar, actualizar y eliminarlos, contando con un frontend muy interactivo. Puedes registrarte con tu correo, solo tendrás que confirmar tu cuenta por medio del correo que recibiras por 630 EVENTOS y posteriormente podrás ingresar al área privada. Todos tus datos están protegidos, y solo tú podrás administrar tus eventos, ya que tu contraseña es hasheada para evitar plagio. Agregar título, descripción, fecha de inicio y final, y ubicación de tus eventos. Puedes restablecer tu contraseña en caso de olvidarla.
+La app 3VENTOS te ayuda a administrar tus eventos, permitiendote agregar, actualizar y eliminarlos, contando con un frontend muy interactivo. Puedes registrarte con tu correo, solo tendrás que confirmar tu cuenta por medio del correo que recibiras por 3VENTOS y posteriormente podrás ingresar al área privada. Todos tus datos están protegidos, y solo tú podrás administrar tus eventos, ya que tu contraseña es hasheada para evitar plagio. Agregar título, descripción, fecha de inicio y final, y ubicación de tus eventos. Puedes restablecer tu contraseña en caso de olvidarla.
 
 
 # Tecnólogias 
@@ -18,7 +18,7 @@ Debes contar con NodeJS instalado. Puedes instalarlo descargando el ejecutable e
 
 # Ejecución
 
-La aplicación se ejecuta, para producción, abriendo la carpeta backend en una ventana de comando y ejecutando el comando "npm run start" hecho esto podrás interactuar con la aplicación (gracias a la carpeta dist que cuenta con el frontend comprimido) abriendo desde el navegador la ruta http://localhost:4000, la cual te dirige al login de la página. Se debe resgistrar el usuario y posteriormente confirmar su cuenta a través del correo que se recibirá al correo registrado del emitente 630 EVENTOS configurado por NODEMAILER. 
+La aplicación se ejecuta, para producción, abriendo la carpeta backend en una ventana de comando y ejecutando el comando "npm run start" hecho esto podrás interactuar con la aplicación (gracias a la carpeta dist que cuenta con el frontend comprimido) abriendo desde el navegador la ruta http://localhost:4000, la cual te dirige al login de la página. Se debe resgistrar el usuario y posteriormente confirmar su cuenta a través del correo que se recibirá al correo registrado del emitente 3VENTOS configurado por NODEMAILER. 
 
 La base debe crearse en POSTGRESQL, puede agregarse otra base relacional con la que trabaja SEQUELIZE, pero debe agregarse su respectiva configuración. Trabajando con POSTGRESQL, se deben crear en una base de datos las siguientes dos trablas:
 
